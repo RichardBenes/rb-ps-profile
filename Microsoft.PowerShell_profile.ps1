@@ -53,3 +53,6 @@ function gitbl {
 function gitm {
 	git checkout master
 }
+
+# Disable the history-based "intellisense" which PowerShell provides by default
+Set-PSReadLineOption -PredictionSource None
