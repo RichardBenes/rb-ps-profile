@@ -1,7 +1,13 @@
-function prompt {
-	
-	return "${PWD}`n>"
-	
+# Use this as:
+# $repoProfile = 'C:\repositories\GitHub\RichardBenes\rb-ps-profile\Microsoft.PowerShell_profile.ps1'
+#
+# if (Test-Path $repoProfile) {
+#     . $repoProfile
+# }
+# in the $PROFILE file.
+
+function Prompt {
+    "PS $($executionContext.SessionState.Path.CurrentLocation)$("`n>" * ($nestedPromptLevel + 1)) ";
 }
 
 function gitl {
