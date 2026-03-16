@@ -21,7 +21,7 @@ function gitl {
 		$n *= 10	
 	}
 	
-	git log --oneline --all --graph -n $n
+	git log --oneline --graph -n $n
 }
 
 function gits {
